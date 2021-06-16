@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/SupportURLHH/SectionIndexView.git", :tag => "#{spec.version}" }
 
-  spec.source_files  = "SectionIndexView/SourceCode", "SectionIndexView/SourceCode/*"
+  spec.source_files  = "SourceCode/*"
   spec.frameworks = "UIKit", "Foundation"
   spec.requires_arc = true
   spec.swift_version = '5.0'
