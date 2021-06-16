@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "fqy" => "489863961@qq.com" }
   
   spec.platform     = :ios
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "11.0"
 
 
   spec.source       = { :git => "https://github.com/SupportURLHH/SectionIndexView.git", :tag => "#{spec.version}" }
