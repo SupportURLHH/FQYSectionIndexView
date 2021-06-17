@@ -73,7 +73,7 @@ public class SectionIndexView: UIView {
     private var currentItemIndex:Int = -1
     private var itemViewList = [SectionIndexItemView]()
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.backgroundColor = backgroundViewColor
         
