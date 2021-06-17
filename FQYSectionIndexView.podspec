@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "FQYSectionIndexView"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A custom tableView sectionIndex View"
   spec.homepage     = "https://github.com/SupportURLHH/FQYSectionIndexView.git"
   spec.license      = { :type => "MIT", :file => "LICENSE" }

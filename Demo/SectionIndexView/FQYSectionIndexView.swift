@@ -10,7 +10,7 @@ import UIKit
 let kFQYSectionIndexViewObserveKeyPath = "contentOffset"
 
 protocol FQYSectionIndexViewDelegate:class {
-    func FQYSectionIndexView(_ indexView:FQYSectionIndexView, didSelect section:Int)
+    func fqySectionIndexView(_ indexView:FQYSectionIndexView, didSelect section:Int)
     
 }
 
@@ -110,7 +110,7 @@ class FQYSectionIndexView: UIView {
                     
                 }
                 //通知代理
-                indexDelegate?.FQYSectionIndexView(self, didSelect: index)
+                indexDelegate?.fqySectionIndexView(self, didSelect: index)
                 
             }
         }
@@ -165,7 +165,7 @@ class FQYSectionIndexView: UIView {
         
         let seletedItemView = itemViewList[section]
         seletedItemView.selected = true
-        indexDelegate?.FQYSectionIndexView(self, didSelect: section)
+        indexDelegate?.fqySectionIndexView(self, didSelect: section)
         
     }
     

@@ -9,8 +9,6 @@ import UIKit
 
 class ViewController: UIViewController, FQYSectionIndexViewDelegate {
     
-    
-
     var tableView:UITableView?
     
     var indexView:FQYSectionIndexView?
@@ -26,7 +24,7 @@ class ViewController: UIViewController, FQYSectionIndexViewDelegate {
         tableView?.dataSource = self
         self.view.addSubview(tableView!)
         
-        indexView = SectionIndexView.FQYSectionIndexView.init(frame: CGRect.init(x: self.view.frame.size.width-25, y: 20, width: 25, height: self.view.frame.size.height-40))
+        indexView = FQYSectionIndexView.init(frame: CGRect.init(x: self.view.frame.size.width-25, y: 20, width: 25, height: self.view.frame.size.height-40))
         indexView?.tableView = tableView
         indexView?.indexDelegate = self
         self.view.addSubview(indexView!)
@@ -51,7 +49,7 @@ class ViewController: UIViewController, FQYSectionIndexViewDelegate {
         
     }
     
-    func FQYSectionIndexView(_ indexView: FQYSectionIndexView, didSelect section: Int) {
+    func fqySectionIndexView(_ indexView: FQYSectionIndexView, didSelect section: Int) {
         NSLog("选中了")
     }
 
