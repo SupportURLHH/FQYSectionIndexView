@@ -1,0 +1,6 @@
+framework module FQYSectionIndexView {
+  umbrella header "FQYSectionIndexView-umbrella.h"
+
+  export *
+  module * { export * }
+}

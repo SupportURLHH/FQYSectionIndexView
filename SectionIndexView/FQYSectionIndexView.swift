@@ -1,16 +1,16 @@
 //
-//  SectionIndexView.swift
-//  SectionIndexView
+//  FQYSectionIndexView.swift
+//  FQYSectionIndexView
 //
 //  Created by 范庆宇 on 2021/6/15.
 //
 
 import UIKit
 
-let kSectionIndexViewObserveKeyPath = "contentOffset"
+let kFQYSectionIndexViewObserveKeyPath = "contentOffset"
 
-protocol SectionIndexViewDelegate:class {
-    func sectionIndexView(_ indexView:SectionIndexView, didSelect section:Int)
+protocol FQYSectionIndexViewDelegate:class {
+    func FQYSectionIndexView(_ indexView:FQYSectionIndexView, didSelect section:Int)
     
 }
 
@@ -30,7 +30,7 @@ class CalloutViewConfig {
     
 }
 
-class SectionIndexView: UIView {
+class FQYSectionIndexView: UIView {
 
     var sectionIndexItemConfig:SectionIndexItemConfig = SectionIndexItemConfig()
     
@@ -56,14 +56,14 @@ class SectionIndexView: UIView {
     weak var tableView:UITableView? {
         didSet {
             if oldValue != nil {
-                tableView?.removeObserver(self, forKeyPath: kSectionIndexViewObserveKeyPath)
+                tableView?.removeObserver(self, forKeyPath: kFQYSectionIndexViewObserveKeyPath)
             }
             let options = NSKeyValueObservingOptions.init(rawValue: NSKeyValueObservingOptions.old.rawValue + NSKeyValueObservingOptions.new.rawValue)
-            tableView?.addObserver(self, forKeyPath: kSectionIndexViewObserveKeyPath, options: options , context: nil)
+            tableView?.addObserver(self, forKeyPath: kFQYSectionIndexViewObserveKeyPath, options: options , context: nil)
         }
     }
     
-    weak var indexDelegate:SectionIndexViewDelegate?
+    weak var indexDelegate:FQYSectionIndexViewDelegate?
     
     var sectionIndexTitles = [String]() {
         didSet{
@@ -110,7 +110,7 @@ class SectionIndexView: UIView {
                     
                 }
                 //通知代理
-                indexDelegate?.sectionIndexView(self, didSelect: index)
+                indexDelegate?.FQYSectionIndexView(self, didSelect: index)
                 
             }
         }
@@ -165,7 +165,7 @@ class SectionIndexView: UIView {
         
         let seletedItemView = itemViewList[section]
         seletedItemView.selected = true
-        indexDelegate?.sectionIndexView(self, didSelect: section)
+        indexDelegate?.FQYSectionIndexView(self, didSelect: section)
         
     }
     
@@ -201,14 +201,14 @@ class SectionIndexView: UIView {
     }()
     
     deinit {
-        tableView?.removeObserver(self, forKeyPath: kSectionIndexViewObserveKeyPath)
+        tableView?.removeObserver(self, forKeyPath: kFQYSectionIndexViewObserveKeyPath)
         
     }
     
 }
 
 
-extension SectionIndexView {
+extension FQYSectionIndexView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let e = event {
@@ -271,7 +271,7 @@ extension SectionIndexView {
     }
 
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == kSectionIndexViewObserveKeyPath {
+        if keyPath == kFQYSectionIndexViewObserveKeyPath {
             if let oldValue = change?[NSKeyValueChangeKey.oldKey] as? NSValue {
                 if let newValue = change?[NSKeyValueChangeKey.newKey] as? NSValue {
                     let oldoffset_y = oldValue.uiOffsetValue.vertical

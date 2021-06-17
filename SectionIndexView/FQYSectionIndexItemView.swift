@@ -1,5 +1,5 @@
 //
-//  SectionIndexItemView.swift
+//  FQYSectionIndexItemView.swift
 //  SectionIndexView
 //
 //  Created by 范庆宇 on 2021/6/15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SectionIndexItemView: UIView {
+class FQYSectionIndexItemView: UIView {
 
     var sectionIndexItemConfig:SectionIndexItemConfig = SectionIndexItemConfig() {
         didSet{

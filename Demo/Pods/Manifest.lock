@@ -1,0 +1,16 @@
+PODS:
+  - FQYSectionIndexView (0.0.1)
+
+DEPENDENCIES:
+  - FQYSectionIndexView
+
+SPEC REPOS:
+  trunk:
+    - FQYSectionIndexView
+
+SPEC CHECKSUMS:
+  FQYSectionIndexView: 1ac010c593ba02b5378dcfeda5e6fe74107b9c5e
+
+PODFILE CHECKSUM: 17f73a51da68dc19315f4808837c65d3fc0e0d8f
+
+COCOAPODS: 1.10.1
