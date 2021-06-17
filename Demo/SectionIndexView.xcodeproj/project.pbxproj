@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		F696C47D267ADD6D005D168B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696C472267ADD6C005D168B /* AppDelegate.swift */; };
 		F696C47E267ADD6D005D168B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F696C474267ADD6C005D168B /* LaunchScreen.storyboard */; };
 		F696C47F267ADD6D005D168B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F696C476267ADD6D005D168B /* Main.storyboard */; };
+		F696C495267B053D005D168B /* FQYSectionIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696C493267B053D005D168B /* FQYSectionIndexView.swift */; };
+		F696C496267B053D005D168B /* FQYSectionIndexItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696C494267B053D005D168B /* FQYSectionIndexItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F696C475267ADD6C005D168B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F696C477267ADD6D005D168B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		F696C478267ADD6D005D168B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F696C493267B053D005D168B /* FQYSectionIndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FQYSectionIndexView.swift; sourceTree = "<group>"; };
+		F696C494267B053D005D168B /* FQYSectionIndexItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FQYSectionIndexItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,6 @@
 				557648F7569EA549A6B8987A /* Pods-SectionIndexView.debug.xcconfig */,
 				9651F6F13EFD291A47557A54 /* Pods-SectionIndexView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -61,6 +64,7 @@
 		F68CF58525393F0500296D7E = {
 			isa = PBXGroup;
 			children = (
+				F696C492267B053D005D168B /* SectionIndexView */,
 				F696C478267ADD6D005D168B /* Info.plist */,
 				F696C472267ADD6C005D168B /* AppDelegate.swift */,
 				F696C471267ADD6C005D168B /* ViewController.swift */,
@@ -87,6 +91,15 @@
 				F696C476267ADD6D005D168B /* Main.storyboard */,
 			);
 			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		F696C492267B053D005D168B /* SectionIndexView */ = {
+			isa = PBXGroup;
+			children = (
+				F696C493267B053D005D168B /* FQYSectionIndexView.swift */,
+				F696C494267B053D005D168B /* FQYSectionIndexItemView.swift */,
+			);
+			path = SectionIndexView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +219,8 @@
 			files = (
 				F696C47D267ADD6D005D168B /* AppDelegate.swift in Sources */,
 				F696C47C267ADD6D005D168B /* ViewController.swift in Sources */,
+				F696C495267B053D005D168B /* FQYSectionIndexView.swift in Sources */,
+				F696C496267B053D005D168B /* FQYSectionIndexItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
