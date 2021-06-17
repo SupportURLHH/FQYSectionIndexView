@@ -1,4 +1,4 @@
-framework module Pods_SectionIndexView {
+module Pods_SectionIndexView {
   umbrella header "Pods-SectionIndexView-umbrella.h"
 
   export *

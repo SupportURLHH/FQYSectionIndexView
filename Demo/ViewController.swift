@@ -11,7 +11,7 @@ class ViewController: UIViewController, FQYSectionIndexViewDelegate {
     
     var tableView:UITableView?
     
-    var indexView:FQYSectionIndexView?
+    var indexView:SectionIndexView?
     
     var sectionIndexTitles = ["A","B","C","D","E","F","G","H","I","J"]
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController, FQYSectionIndexViewDelegate {
         tableView?.dataSource = self
         self.view.addSubview(tableView!)
         
-        indexView = FQYSectionIndexView.init(frame: CGRect.init(x: self.view.frame.size.width-25, y: 20, width: 25, height: self.view.frame.size.height-40))
+        indexView = SectionIndexView.init(frame: CGRect.init(x: self.view.frame.size.width-25, y: 20, width: 25, height: self.view.frame.size.height-40))
         indexView?.tableView = tableView
         indexView?.indexDelegate = self
         self.view.addSubview(indexView!)
@@ -49,7 +49,7 @@ class ViewController: UIViewController, FQYSectionIndexViewDelegate {
         
     }
     
-    func fqySectionIndexView(_ indexView: FQYSectionIndexView, didSelect section: Int) {
+    func fqySectionIndexView(_ indexView: SectionIndexView, didSelect section: Int) {
         NSLog("选中了")
     }
 

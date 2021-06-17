@@ -1,6 +1,6 @@
 //
-//  FQYSectionIndexView.swift
-//  FQYSectionIndexView
+//  SectionIndexView.swift
+//  SectionIndexView
 //
 //  Created by 范庆宇 on 2021/6/15.
 //
@@ -10,7 +10,7 @@ import UIKit
 let kFQYSectionIndexViewObserveKeyPath = "contentOffset"
 
 protocol FQYSectionIndexViewDelegate:class {
-    func fqySectionIndexView(_ indexView:FQYSectionIndexView, didSelect section:Int)
+    func fqySectionIndexView(_ indexView:SectionIndexView, didSelect section:Int)
     
 }
 
@@ -30,7 +30,7 @@ class CalloutViewConfig {
     
 }
 
-class FQYSectionIndexView: UIView {
+class SectionIndexView: UIView {
 
     var sectionIndexItemConfig:SectionIndexItemConfig = SectionIndexItemConfig()
     
@@ -71,7 +71,7 @@ class FQYSectionIndexView: UIView {
         }
     }
     private var currentItemIndex:Int = -1
-    private var itemViewList = [FQYSectionIndexItemView]()
+    private var itemViewList = [SectionIndexItemView]()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -135,7 +135,7 @@ class FQYSectionIndexView: UIView {
         itemViewList.removeAll()
         for (index,title) in sectionIndexTitles.enumerated() {
             let frame = CGRect.init(x: 0, y:kContentViewVPadding + CGFloat(index)*(itemViewHeight+itemViewSpace), width: self.frame.size.width-2*kContentViewHMargin, height: itemViewHeight)
-            let itemView = FQYSectionIndexItemView.init(frame: frame)
+            let itemView = SectionIndexItemView.init(frame: frame)
             itemView.sectionIndexItemConfig = sectionIndexItemConfig
             itemView.titleLabel.text = title
             itemViewList.append(itemView)
@@ -208,7 +208,7 @@ class FQYSectionIndexView: UIView {
 }
 
 
-extension FQYSectionIndexView {
+extension SectionIndexView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let e = event {

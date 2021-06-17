@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F61C509E92EA402089A399DDC6E59CB"
-               BuildableName = "libPods-SectionIndexView.a"
-               BlueprintName = "Pods-SectionIndexView"
+               BlueprintIdentifier = "7877416DC8944A16669833E66AA27D3A"
+               BuildableName = "libFQYSectionIndexView.a"
+               BlueprintName = "FQYSectionIndexView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
