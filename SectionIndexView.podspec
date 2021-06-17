@@ -6,8 +6,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "fqy" => "489863961@qq.com" }
   
-  spec.platform     = :ios
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "9.0"
 
 
   spec.source       = { :git => "https://github.com/SupportURLHH/SectionIndexView.git", :tag => "#{spec.version}" }
