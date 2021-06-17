@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SectionIndexItemView: UIView {
+public class SectionIndexItemView: UIView {
 
     var sectionIndexItemConfig:SectionIndexItemConfig = SectionIndexItemConfig() {
         didSet{
@@ -72,7 +72,7 @@ class SectionIndexItemView: UIView {
     }
 }
 
-class CallOutView:UIView {
+public class CallOutView:UIView {
     
     var calloutViewConfig:CalloutViewConfig = CalloutViewConfig() {
         didSet{

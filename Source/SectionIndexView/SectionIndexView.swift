@@ -9,12 +9,12 @@ import UIKit
 
 let kFQYSectionIndexViewObserveKeyPath = "contentOffset"
 
-protocol FQYSectionIndexViewDelegate:class {
+public protocol FQYSectionIndexViewDelegate:class {
     func fqySectionIndexView(_ indexView:SectionIndexView, didSelect section:Int)
     
 }
 
-class SectionIndexItemConfig {
+public class SectionIndexItemConfig {
     var titleColor:UIColor = UIColor.black
     var titleSelectedColor:UIColor = UIColor.white
     var contentColr:UIColor = UIColor.clear
@@ -23,14 +23,14 @@ class SectionIndexItemConfig {
     
 }
 
-class CalloutViewConfig {
+public class CalloutViewConfig {
     var calloutImage:UIImage = UIImage(named: "bg_retrieving_letter")!
     var titleFont:UIFont = UIFont.boldSystemFont(ofSize: 20)
     var titleColor:UIColor = UIColor.white
     
 }
 
-class SectionIndexView: UIView {
+public class SectionIndexView: UIView {
 
     var sectionIndexItemConfig:SectionIndexItemConfig = SectionIndexItemConfig()
     
